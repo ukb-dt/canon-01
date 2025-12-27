@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="ukhona/css/head.css" rel="stylesheet" />
-  <script src="ukhona/js/mathjax.js"></script>
+  <link href="../css/head.css" rel="stylesheet" />
+  <script src="../js/mathjax.js"></script>
   <script id="MathJax-script" defer
      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
@@ -32,7 +32,7 @@
 
       <div class="top-right">
         <ul class="nav-links">
-          <li><a href="https://ukb-dt.github.io/canon-00/" class="nav-link" data-nav="home">Home</a></li>
+          <li><a href="https://ukb-dt.github.io/canon-01/" class="nav-link" data-nav="home">Home</a></li>
         </ul>
 
         <button class="menu-icon" id="menuIcon" role="button" aria-label="Open navigation menu" aria-expanded="false">
@@ -48,11 +48,11 @@
 <!-- ULYSSES — STRICTLY 18 EPISODES -->
 
     <a href="#"><div class="icon-box">🇿🇦</div>South Africa</a>
-    <a href="ukhona/html/nigerian.html"><div class="icon-box">🇳🇬</div>Nigeria</a>
-    <a href="ukhona/html/doctor.html"><div class="icon-box">🇪🇬</div>Egypt</a>
-    <a href="ukhona/html/hair.html"><div class="icon-box">🇰🇪</div>Kenya</a>
-    <a href="ukhona/html/night-life.html"><div class="icon-box">🇲🇦</div>Morocco</a>
-    <a href="ukhona/html/winary.html"><div class="icon-box">🇩🇿</div>Algeria</a>
+    <a href="nigerian.html"><div class="icon-box">🇳🇬</div>Nigeria</a>
+    <a href="doctor.html"><div class="icon-box">🇪🇬</div>Egypt</a>
+    <a href="hair.html"><div class="icon-box">🇰🇪</div>Kenya</a>
+    <a href="night-life.html"><div class="icon-box">🇲🇦</div>Morocco</a>
+    <a href="winary.html"><div class="icon-box">🇩🇿</div>Algeria</a>
     <a href="#"><div class="icon-box">🇪🇹</div>Ethiopia</a>
     <a href="#"><div class="icon-box">🇬🇭</div>Ghana</a>
     <a href="#"><div class="icon-box">🇹🇿</div>Tanzania</a>
@@ -74,9 +74,9 @@
     <a href="#"><div class="icon-box">🇧🇮</div>Burundi</a>
     <a href="#"><div class="icon-box">🇷🇼</div>Rwanda</a>
     <a href="#"><div class="icon-box">🇸🇿</div>Eswatini</a>
-    <a href="ukhona/html/nadine-djuiko.html"><div class="icon-box">🇨🇲</div>Cameroon</a>
-    <a href="ukhona/html/suppy-chain.html"><div class="icon-box">🇬🇲</div>Gambia</a>
-    <a href="ukhona/html/other-cases.html"><div class="icon-box">🇸🇱</div>Sierra Leone</a>
+    <a href="nadine-djuiko.html"><div class="icon-box">🇨🇲</div>Cameroon</a>
+    <a href="suppy-chain.html"><div class="icon-box">🇬🇲</div>Gambia</a>
+    <a href="other-cases.html"><div class="icon-box">🇸🇱</div>Sierra Leone</a>
     <a href="#"><div class="icon-box">🇲🇷</div>Mauritania</a>
     <a href="#"><div class="icon-box">🇧🇯</div>Benin</a>
     <a href="#"><div class="icon-box">🇬🇳</div>Guinea</a>
@@ -108,35 +108,72 @@
   <main class="page wrap-max">
 
     <!-- section class="card" -->
-    <section class="card">
-      <h1>Client Behavior → User Experience</h1>
 
-      <div style="overflow-x:auto; padding:20px 0;">
-      $$
-      \text{LS:}\ (E,x)
-      \;\longrightarrow\;
-      \text{UB:}\ E(t\mid x)+\epsilon
-      \;\longrightarrow\;
-      \text{SGD:}\ \frac{dE_x}{dt}
-      \;\longrightarrow\;
-      \text{UI/UX:}\ \frac{dE_{\bar{x}}}{dt}\ \pm\ z\sqrt{\frac{d^2 E_x}{dt^2}}
-      \;\longrightarrow\;
-      \text{EC}\ \int E_x\,dt + \epsilon_x t + C_x
-      $$
-      </div>
+        <section class="card">
+        <h2>Optimization A: The "Factory" Protocol</h2>
+        <p><strong>Context:</strong> Braiding typically takes 6–8 hours. This duration is a high "friction" variable ($\epsilon$) in User Behavior.</p>
+        <hr>
 
-    <div style="text-align:center;">
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/OLEB7GEScdc?start=1320" 
-        title="Nadine Djuiko" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-      <p><strong>Note:</strong> Nadine Djuiko's Backpropagation to Optimal Work Hours</p>
-    </div>
+        <h3>Phase II: UB (The Fatigue Limit)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{UB:}\ E(\text{pain} \mid t) > \text{Tolerance} $$
+        </div>
+        <ul>
+            <li><strong>Observation:</strong> Clients delay returning because the service duration ($t$) is physically painful.</li>
+            <li><strong>The Error:</strong> The "User Interface" (the chair) has a low retention rate due to time cost.</li>
+        </ul>
 
-    </section>
+        <h3>Phase III: SGD (Parallelization)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{SGD:}\ \min(t) \Rightarrow \sum_{i=1}^{n} x_i $$
+        </div>
+        <ul>
+            <li><strong>The Optimization:</strong> Nadine changes the variable $x$ from a scalar (1 stylist) to a vector (2–3 stylists per head).</li>
+            <li><strong>The Descent:</strong> She minimizes $t$ from 6 hours to 2 hours.</li>
+        </ul>
+
+        <h3>Phase V: Economic Calculation (Throughput)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{EC:}\ \int_{0}^{24h} (R \cdot 3)\,dt $$
+        </div>
+        <ul>
+            <li><strong>Result:</strong> By reducing service time by 66%, seat turnover triples.</li>
+            <li><strong>Reseed:</strong> The surplus capital funds the housing for the extra staff (Search result mentions buying homes for staff), locking them into the system.</li>
+        </ul>
+        </section>
+
+        <section class="card">
+        <h2>Optimization B: The Authenticity Supply Chain</h2>
+        <p><strong>Context:</strong> Immigrant entrepreneurs (Importers) optimizing "Inventory" rather than "Time."</p>
+        <hr>
+
+        <h3>Phase II: UB (The Rejection of Substitutes)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{UB:}\ E(\text{taste} \mid x_{local}) \approx \text{Fail} $$
+        </div>
+        <ul>
+            <li><strong>Observation:</strong> The Diaspora client rejects local spinach ($x_{local}$) as a substitute for <em>Ndole</em>.</li>
+            <li><strong>The Signal:</strong> The "Error" ($\epsilon$) is the sensory gap between "Here" and "Home."</li>
+        </ul>
+
+        <h3>Phase III: SGD (Supply Line Descent)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{SGD:}\ \frac{d(\text{Authenticity})}{d(\text{Logistics})} $$
+        </div>
+        <ul>
+            <li><strong>The Optimization:</strong> The entrepreneur optimizes the supply chain to bridge the geographic distance ($d$).</li>
+            <li><strong>The Cost:</strong> High logistics cost ($C_L$), but it minimizes $\epsilon$ (the taste gap) to zero.</li>
+        </ul>
+
+        <h3>Phase IV: UI/UX (Sensory UI)</h3>
+        <div style="margin-bottom: 1rem;">
+            $$ \text{UX:}\ \text{Signal}(\text{Smell}) \to \text{Trust} $$
+        </div>
+        <ul>
+            <li><strong>The Interface:</strong> The smell of the shop.</li>
+            <li><strong>The Experience:</strong> It validates the user's identity. If the smell is wrong, the User Experience fails instantly.</li>
+        </ul>
+        </section>
 
 
   </main>
@@ -155,6 +192,6 @@
       </div>
     </div>
   </footer>
-  <script src="ukhona/js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
